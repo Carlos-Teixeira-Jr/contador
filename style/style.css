@@ -1,0 +1,46 @@
+body{
+  background-color: #F8F9F9;
+}
+
+#btn-minus, #btn-reset, #btn-add {
+  width: 126px;
+  margin: 20px;
+}
+
+#buttons-container{
+  align-content: center;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 30px
+}
+
+#modeButtons{
+  margin: 30px;
+  flex-wrap: nowrap;
+}
+
+/*#modeBuutons{
+  flex-wrap: nowrap;
+}*/
+
+#number{
+  font-size: 150px;
+  font-weight: bolder;
+  color: #273746;
+  margin: auto;
+}
+
+.title-container{
+  margin: auto;
+  margin-bottom: auto;
+  color: #273746;
+}
+
+h1{
+  font-size: 80px;
+}
+
+#oneByOne-btn, #custom-btn{
+  margin: 5px;
+  width: auto;
+}
