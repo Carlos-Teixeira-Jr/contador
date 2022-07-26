@@ -2,6 +2,19 @@ body{
   background-color: #F8F9F9;
 }
 
+.btn-group{
+  width: auto;
+}
+
+#mode-btn-row{
+  width: 300px;
+}
+
+#customCountInput{
+  width: 90px;
+  margin-right: 200px;
+}
+
 #btn-minus, #btn-reset, #btn-add {
   width: 126px;
   margin: 20px;
@@ -19,9 +32,6 @@ body{
   flex-wrap: nowrap;
 }
 
-/*#modeBuutons{
-  flex-wrap: nowrap;
-}*/
 
 #number{
   font-size: 150px;
@@ -32,7 +42,8 @@ body{
 
 .title-container{
   margin: auto;
-  margin-bottom: auto;
+  margin-bottom: 50px;
+  margin-top: 30px;
   color: #273746;
 }
 
@@ -43,4 +54,26 @@ h1{
 #oneByOne-btn, #custom-btn{
   margin: 5px;
   width: auto;
+  border-radius: 10px;
+}
+
+input{
+  margin: 0 auto;
+}
+
+#mode-btn-container{
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-device-width: 500px){
+  
 }

@@ -12,21 +12,28 @@
 </head>
 <body>
 
+  <div class="btn-group inline" role="group" aria-label="Basic example">
+    <input type="button" class="btn btn-secondary" value="+">
+    <input type="button" class="btn btn-secondary" value="-">
+    <input class="form-control" type="number" name="quantidade" onchange="preencheTotalProduto()" min="0" max="<?= $tamanho['estoque'];?>" value="0">
+</div>
+
+
+  <div class="container">
+    <div id="modeButtons" class="row d-flex justify-content-center">
+      <button id="oneByOne-btn" class="btn btn-primary btn-lg col-md-6">CONTAGEM POR UNIDADE</button>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <button id="custom-btn" class="btn btn-primary" type="button">CONTAGEM CUSTOMIZADA</button>
+        </div>
+        <input id="customCountInput" type="number" class="form-control" placeholder="Digite" aria-label="" aria-describedby="basic-addon1">
+      </div>
+    </div>
+  </div>
+
   <div class="title-container text-center">
     <h1>Contador</h1>
   </div>
-
-  <div class="container" id="mode-btn-container">
-    <div class="row" id="mode-btn-row">
-      <div class="btn-group inline" role="group" aria-label="Basic example">
-        <input type="button" class="btn btn-secondary col-sm-4" id="oneByOne-btn" value="CONTAGEM POR UNIDADE">
-        <input type="button" class="btn btn-secondary col-sm-4" id="custom-btn" value="CONTAGEM CUSTOMIZADA">
-        <input class="form-control col-sm-4" id="customCountInput" type="number">
-      </div>
-    </div>  
-  </div>
-
-  
   <div>
     <div class="text-center" id="number">0</div>
   </div>
