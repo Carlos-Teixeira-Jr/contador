@@ -5,50 +5,22 @@ let number = document.getElementById("number");
 let count = 0;
 let oneByOneCount = document.getElementById("oneByOne-btn");
 let customCountBtn = document.getElementById("custom-btn");
+let inputValue = 1;
+let customInputValue;
 
 customCountBtn.addEventListener("click", function(e){
   e.preventDefault();
-  let input = document.getElementById("customCountInput");
-  let inputValue = input.value;
-  console.log(inputValue);
+  customInputValue = document.getElementById("customCountInput");
+  inputValue = parseInt(customInputValue.value);
+  console.log(typeof inputValue)
 });
 
+oneByOneCount.addEventListener("click", function(){
+  inputValue = 1;
+})
 
-if(inputValue != undefined){
-  function increaseNumber(){
-  count += Number(inputValue);
-  number.innerHTML = count;
-  }
-  function resetNumber(){
-    count = 0;
-    number.innerHTML = count;
-  }
-  function decreaseNumber(){
-    count -= Number(inputValue);
-    number.innerHTML = count;
-  }
-}else{
-  function increaseNumber(){
-    count++;
-    number.innerHTML = count;
-  }
-  
-  function resetNumber(){
-    count = 0;
-    number.innerHTML = count;
-  }
-  
-  function decreaseNumber(){
-    count--;
-    number.innerHTML = count;
-  }
-}
-
-
-/*
-}
 function increaseNumber(){
-  count++;
+  count += inputValue;
   number.innerHTML = count;
 }
 
@@ -58,8 +30,6 @@ function resetNumber(){
 }
 
 function decreaseNumber(){
-  count--;
+  count -= inputValue;
   number.innerHTML = count;
 }
-*/
-
